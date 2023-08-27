@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    height: 100vh;
+    background-color: #000000bf;
+    width: 100%;
+    max-height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    z-index: 10;
+    height: 50px;
+}
+#logo {
+    cursor: pointer;
+    margin: 5px;
+    width: auto;
+    height: 30px;
+    
+}
+ul li  {
+    list-style: none;
+    display: inline-block;
+
+    position: relative;
+    background: none;
+    transition: .4s;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+ul li a {
+    left: 0;
+    text-decoration: none;
+    color: #fff;
+}
+ul li a:hover {
+    color: rgb(157, 54, 241);
+    transition: .4s;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px  rgba(122, 48, 183, 0.916);
+}
+
+.descarga a{
+    display: inline-block;
+    border: 1px solid rgb(130, 43, 201);
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 0px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 400;
+    transition: .4s;
+}
+.descarga a:hover {
+    background: rgba(130, 43, 201, 0.637);
+    transition: .4s;
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 30px 0px rgb(130, 43, 201);
+    -moz-box-shadow: 0px 0px 30px 0px rgb(130, 43, 201);
+    box-shadow: 0px 0px 30px 0px rgb(130, 43, 201);
+}
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+#uwu-video {
+    position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+    z-index: -11;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.text-center {
+    position: absolute;
+	width: 100%;
+	text-align: center;
+	top:60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.text-center h6 {
+    color: #fff;
+	font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+	margin: 0;
+    padding: 10px;
+}
+.text-center a img {
+    width: 110px;
+    padding-top: 0px;
+}
+
+
+
+
+@media (max-width: 1920px) {
+    #uwu-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 952px){
+    #logo{
+        padding-left: 20px;
+    }
+    ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 85%;
+        height: 100%;
+        background: #2f2f2fbe;
+        backface-visibility: hidden;
+        overflow: hidden;
+        backdrop-filter: blur(20px);
+        background-size: cover;
+        overflow: hidden;
+        object-fit: cover;
+        top: 80px;
+        left: -100%;
+        border-radius: 0 10px;
+        text-align: center;
+        transition: all .9s;
+    
+    }
+
+    ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    ul li a{
+        font-size: 16px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    #uwu-video {
+        width: auto;
+        height: 100%;
+    }
+    .descarga {
+        padding-top: 5px;
+    }
+    .main {
+
+        width: auto;
+        height: 100%,    }
+    
+}
