@@ -89,14 +89,17 @@ ul li a:hover {
 }
 
 #uwu-video {
-    position: fixed;
+    position: absolute;
 	right: 0;
 	bottom: 0;
 	width: 100%;
-	height: auto;
+	height: 100%;
     z-index: -11;
     overflow: hidden;
-    object-fit: cover;
+    background-image: url(img/slide/slide1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .yt {
     position: absolute;
@@ -186,10 +189,7 @@ ul li a:hover {
     #check:checked ~ ul{
         left:0;
     }
-    #uwu-video {
-        width: auto;
-        height: 100%;
-    }
+   
     .descarga {
         padding-top: 5px;
         
@@ -220,3 +220,6 @@ ul li a:hover {
     }
     
 }
+
+
+
