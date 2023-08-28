@@ -12,14 +12,15 @@
    
 </head>
 <body>
-    <main class="main">
-
-        <header class="navbar">
+    <main class="main" id="main">
+        <i class="fa-solid fa-xmark" id="sii" onclick="ocultar();"></i>
+        <header class="navbar" id="navbar">
            
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fa-solid fa-bars"></i>
             </label>
+
             <a href="#" class="navbar-logo"><img src="img/navbar/logo1.png" id="logo" alt="">
               
               <ul class="uwu">
@@ -35,13 +36,14 @@
             </div>
             
         </header>
+        <div class="bg-yt"></div>
 
-        <section>
-           <divc class="bg-video">
-            <img id="uwu-video" >
+        <section >
+           <div class="bg-video">
+            <img  id="uwu-video" >
            </div>
-           <img class="yt" src="img/links/play.d8c096b7.png" alt="">
-           <div class="text-center">
+           <img class="yt" src="img/links/play.d8c096b7.png" id="boton" onclick="mostrar();" alt="">
+           <div class="text-center" id="uwu">
             <img class="uwu-download" src="img/links/download.png" alt="">
             <h6>IMMERSIVE SCI-FI RPG SHOOTER WITH ADORABLES NIKKES</h6>
             <a href="#"><img src="img/links/appstore.png" alt=""></a>      
@@ -49,18 +51,45 @@
             <a href="#"><img src="img/links/win_download.f253aa69.png" alt=""></a>
           </div>
         </section>
+
+        <section class="uwu4">
+            <div class="yt-uwu" id="yt-uwu" >
+                <iframe class="iframe-com" src="https://www.youtube.com/embed/JjcR8wuWEC4?si=TPaqzhuy7QyndFcz" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+        </section>
     
     </main>    
     
     <section>
 
-
+        <div></div>
 
     </section>
     
 
         
-    <script type="text/javascript" src="script.js"></script>   
+
+    <script>
+        function mostrar(){
+            document.getElementById('yt-uwu').style.display = 'flex';
+            document.getElementById('main').style.background = '#000000e3';
+            document.getElementById('navbar').style. zIndex = '-10';
+            document.getElementById('uwu').style. zIndex = '-10';
+            document.getElementById('sii').style.display = 'block';
+        }
+        function ocultar(){
+            document.getElementById('yt-uwu').style.display = 'none';
+            document.getElementById('sii').style.display = 'none';
+            document.getElementById('main').style.background = '#000000a1';
+            document.getElementById('navbar').style. zIndex = '10';
+            document.getElementById('uwu').style. zIndex = '10';
+        }
+
+        
+    </script> 
     
 
 
