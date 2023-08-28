@@ -145,6 +145,11 @@ ul li a:hover {
     cursor: pointer;
 	left: 50%;
 	transform: translate(-50%, -50%);
+    transition: .8s;
+}
+.yt:hover {
+    width: 100px;
+    transition: .8s;
 }
 
 
