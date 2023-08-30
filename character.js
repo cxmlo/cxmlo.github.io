@@ -13,7 +13,7 @@ function cargar(opcion){
     if(opcion==1){
         nombre.innerHTML = "- - Power - -"
         descripcion.innerHTML = "Miembro de la División Especial 4 de Exterminio del Diablo de Seguridad Pública Demonio del diablo de sangre.";
-        fotoPrincipal.src = "img/pj/power_FB.webp";
+        fotoPrincipal.src = "img/pj/Power_FB.webp";
         raresa.src = "img/raresa/SSR.png";
         arma.src = "img/arma/cohetes.png";
         elementos.src = "img/elementos/fire.png";
@@ -37,7 +37,7 @@ function cargar(opcion){
     if(opcion==4){
         nombre.innerHTML = "- - Noir - -"
         descripcion.innerHTML = "Un miembro del escuadrón 777 que atrae a una multitud de clientes a Coin Rush. La hermana mayor biológica de Light Bunny Blanc, Una chica pusilánime que siente cariño y orgullosa de su hermana decididamente más atrevida.";
-        fotoPrincipal.src = "img/pj/noir_FB.webp";
+        fotoPrincipal.src = "img/pj/Noir_FB.webp";
         raresa.src = "img/raresa/SSR.png";
         arma.src = "img/arma/escopeta.png";
         elementos.src = "img/elementos/wind.png";
